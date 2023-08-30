@@ -206,7 +206,7 @@ EOF
 fi
 cd /app
 export NODE_ENV=development
-runcmd yarn install --network-timeout=30000
+runcmd yarn install --network-timeout=100000
 
 # Create NPM service
 log "Creating NPM service"
