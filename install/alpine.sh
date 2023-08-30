@@ -177,8 +177,7 @@ cp -r global/* /app/global
 log "Building frontend"
 cd ./frontend
 export NODE_ENV=development
-runcmd yarn cache clean
-runcmd yarn install --network-timeout=100000
+runcmd yarn install --force
 runcmd yarn build
 cp -r dist/* /app/frontend
 cp -r app-images/* /app/frontend/images
