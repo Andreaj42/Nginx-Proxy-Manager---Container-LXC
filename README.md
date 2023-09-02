@@ -5,9 +5,9 @@ Script d'installation de **Nginx Proxy Manager** dans un container LXC pour Prox
 ## Usage
 
 ```console
-  curl -sL https://raw.githubusercontent.com/ej52/proxmox/main/Nginx-Proxy-Manager---Container-LXC/create.sh | bash -s
+  curl -sL https://raw.githubusercontent.com/Andreaj42/Nginx-Proxy-Manager---Container-LXC/main/create.sh | bash -s
 ```
 
 ```console
-  curl -sL https://raw.githubusercontent.com/ej52/proxmox/main/Nginx-Proxy-Manager---Container-LXC/create.sh | bash -s -- --storage data
+  curl -sL https://raw.githubusercontent.com/Andreaj42/Nginx-Proxy-Manager---Container-LXC/main/create.sh | bash -s -- --storage data
 ```
