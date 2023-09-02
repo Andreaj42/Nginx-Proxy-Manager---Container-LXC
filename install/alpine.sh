@@ -177,7 +177,7 @@ cp -r global/* /app/global
 log "Building frontend"
 cd ./frontend
 export NODE_ENV=development
-
+ls -lah
 runcmd yarn install
 runcmd yarn build
 cp -r dist/* /app/frontend
