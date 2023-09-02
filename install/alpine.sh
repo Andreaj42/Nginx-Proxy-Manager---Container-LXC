@@ -178,9 +178,6 @@ log "Building frontend"
 cd ./frontend
 export NODE_ENV=development
 
-rm -rf node_modules yarn.lock
-runcmd yarn add popper.js@^1.16.1
-
 runcmd yarn install
 runcmd yarn build
 cp -r dist/* /app/frontend
