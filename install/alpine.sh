@@ -178,6 +178,7 @@ log "Building frontend"
 cd ./frontend
 export NODE_ENV=development
 ls -lah
+cat package.json
 runcmd yarn install
 runcmd yarn build
 cp -r dist/* /app/frontend
