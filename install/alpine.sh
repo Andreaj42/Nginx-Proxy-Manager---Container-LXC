@@ -177,7 +177,7 @@ cp -r global/* /app/global
 log "Building frontend"
 cd ./frontend
 export NODE_ENV=development
-runcmd yarn install --ignore-scripts -ignore-optional
+runcmd yarn install --ignore-scripts --ignore-optional
 runcmd yarn build
 cp -r dist/* /app/frontend
 cp -r app-images/* /app/frontend/images
