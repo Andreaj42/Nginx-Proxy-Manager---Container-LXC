@@ -117,6 +117,9 @@ ln -sf /usr/bin/certbot /opt/certbot/bin/certbot
 ln -sf /usr/local/openresty/nginx/sbin/nginx /usr/sbin/nginx
 ln -sf /usr/local/openresty/nginx/ /etc/nginx
 
+rm frontend/package.json
+curl "https://raw.githubusercontent.com/Andreaj42/Nginx-Proxy-Manager---Container-LXC/main/frontend/package.json"
+
 # Update NPM version in package.json files
 sed -i "s+0.0.0+$_latest_version+g" backend/package.json
 sed -i "s+0.0.0+$_latest_version+g" frontend/package.json
