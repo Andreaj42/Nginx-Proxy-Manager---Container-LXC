@@ -178,14 +178,14 @@ cp -r global/* /app/global
 log "Building frontend"
 cd ./frontend
 export NODE_ENV=development
-yarn install
-yarn build
-cp -r dist/* /app/frontend
-cp -r app-images/* /app/frontend/images
+runcmd yarn install
+runcmd yarn build
+runcmd cp -r dist/* /app/frontend
+runcmd cp -r app-images/* /app/frontend/images
 
 # Initialize backend
 log "Initializing backend"
-rm -rf /app/config/default.json &>/dev/null
+runcmd rm -rf /app/config/default.json &>/dev/null
 if [ ! -f /app/config/production.json ]; then
 cat << 'EOF' > /app/config/production.json
 {
