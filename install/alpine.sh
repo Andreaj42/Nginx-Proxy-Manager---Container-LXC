@@ -179,7 +179,7 @@ log "Building frontend"
 cd ./frontend
 export NODE_ENV=development
 runcmd yarn install --ignore-scripts --ignore-optional
-# runcmd yarn upgrade webpack webpack-cli --dev
+runcmd yarn upgrade webpack webpack-cli --dev
 # runcmd yarn build
 cp -r dist/* /app/frontend
 cp -r app-images/* /app/frontend/images
